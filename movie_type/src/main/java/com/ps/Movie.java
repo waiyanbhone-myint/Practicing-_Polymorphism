@@ -18,6 +18,7 @@ public class Movie {
         return switch (type.toUpperCase().charAt(0)){
             case 'A' -> new Adventure(title);
             case 'C' -> new Comedy(title);
+            case 'D' -> new Documentary(title);
             case 'S' -> new ScienceFiction(title);
             default -> new Movie(title);
         };
